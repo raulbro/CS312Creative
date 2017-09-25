@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Creative assignment!</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+	<style type="text/css">
+		body {
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1 class="ui center aligned blue inverted header">My Top Three Current Boxers and MMA Fighters</h1>
+		<br><br>
+	</div>
+	<div>
+		<button class="ui inverted blue button" onclick="topBoxing()">Boxing </button>
+		<button class="ui inverted blue button" onclick="topMMA()">MMA</button>
+		<br><br>
+	</div>
+	<div id="divMMA">
+		<div class="ui link cards">
+		<div class="pink card">
+				<div class="image">
+					<img src="tf2.jpg">
+				</div>
+				<div class="content">
+					<div class="header">Tony "El cucuy" Ferguson</div>
+					<div class="meta">
+						<span>Age: 33</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Record 22-3
+					</span>
+				</div>
+			</div>
+			<div class="pink card">
+				<div class="image">
+					<img src="yr.jpg">
+				</div>
+				<div class="content">
+					<div class="header">Yair "El Pantera" Rodriguez</div>
+					<div class="meta">
+						<span>Age: 24</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Record 12-2
+					</span>
+				</div>
+			</div>
+			<div class="pink card">
+				<div class="image">
+					<img src="jj.jpg">
+				</div>
+				<div class="content">
+					<div class="header">Jones "Bones" Jones</div>
+					<div class="meta">
+						<span>Age: 30</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Record 22-1
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="divBoxing" style="display: none;">
+		<div class="ui link cards">
+		<div class="red card">
+				<div class="image">
+					<img src="ge.jpg">
+				</div>
+				<div class="content">
+					<div class="header">Francisco "Gallo" Estrada</div>
+					<div class="meta">
+						<span>Age: 27</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Record 36-2
+					</span>
+				</div>
+			</div>
+			<div class="red card">
+				<div class="image">
+					<img src="ca.jpg">
+				</div>
+				<div class="content">
+					<div class="header">Saul "Canelo" Alvarez</div>
+					<div class="meta">
+						<span>Age: 27</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Record 49-1
+					</span>
+				</div>
+			</div>
+			<div class="red card">
+				<div class="image">
+					<img src="pn.jpg">
+				</div>
+				<div class="content">
+					<div class="header">Luis "Pantera" Nery</div>
+					<div class="meta">
+						<span>Age: 22</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<span class="right floated">
+						Record 24-0
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".card").hover(function(){
+			$(".content, .extra").css("background-color", "white");
+		});
+
+		function topBoxing() {
+			$("#divMMA").hide("slow");
+			$("#divBoxing").show();
+		};
+
+		function topMMA() {
+			$("#divBoxing").css("display", "none");
+			$("#divMMA").show();
+		};
+
+	</script>
+</body>
+</html>
